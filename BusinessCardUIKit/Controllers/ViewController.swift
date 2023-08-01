@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         static let profileImageTopPadding: CGFloat = 24
         static let nameLabelTopPadding: CGFloat = 16
         static let sloganLabelTopPadding: CGFloat = 4
-        static let bottomViewTopPadding: CGFloat = 20
         
         static let skillsStackTopPadding: CGFloat = 20
         static let skillsStackLeadingPadding: CGFloat = 16
@@ -39,7 +38,10 @@ class ViewController: UIViewController {
         static let aboutStackTopPadding: CGFloat = 24
         static let aboutStackLeadingPadding: CGFloat = 16
         static let aboutStackTrailingPadding: CGFloat = -16
-        static let aboutStackBottomPadding: CGFloat = -58
+        static let aboutStackBottomPadding: CGFloat = -358
+        
+        static let bottomViewTopPadding: CGFloat = 20
+        static let bottomViewBottomPadding: CGFloat = 300
     }
     
     // MARK: - View Did Load
@@ -247,7 +249,7 @@ class ViewController: UIViewController {
             bottomView.topAnchor.constraint(equalTo: locationStack.bottomAnchor, constant: UIConstants.bottomViewTopPadding),
             bottomView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            bottomView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: UIConstants.bottomViewBottomPadding),
             
             skillsStack.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: UIConstants.skillsStackTopPadding),
             skillsStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: UIConstants.skillsStackLeadingPadding),
@@ -258,10 +260,10 @@ class ViewController: UIViewController {
             skillsCollectionView.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: UIConstants.skillsCollectionViewLeadingPadding),
             skillsCollectionView.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: UIConstants.skillsCollectionViewTrailingPadding),
             
-            aboutStack.topAnchor.constraint(equalTo: skillsCollectionView.bottomAnchor, constant: 24),
-            aboutStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: 16),
-            aboutStack.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: -16),
-            aboutStack.bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: -58),
+            aboutStack.topAnchor.constraint(equalTo: skillsCollectionView.bottomAnchor, constant: UIConstants.aboutStackTopPadding),
+            aboutStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: UIConstants.aboutStackLeadingPadding),
+            aboutStack.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: UIConstants.aboutStackTrailingPadding),
+            aboutStack.bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: UIConstants.aboutStackBottomPadding)
             
         ])
         
