@@ -59,12 +59,10 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        // Update skillsCollectionView height when the view layout changes
         skillsCollectionViewHeightConstraint.constant = calculateSkillsCollectionViewHeight()
     }
     
     // MARK: - View Properties
-    
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.isScrollEnabled = true
@@ -190,8 +188,6 @@ class ViewController: UIViewController {
         return textView
     }()
     
-    
-    // MARK: - Setup Functions
     // MARK: - Setup Functions
     private func setupSubviews() {
         view.addSubview(scrollView)
@@ -386,7 +382,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         return cell
     }
 
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if skillsArray.count == indexPath.row {
             return CGSize(width: UIConstants.addButtonSize, height: UIConstants.addButtonSize)

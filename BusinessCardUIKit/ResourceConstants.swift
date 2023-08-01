@@ -13,6 +13,7 @@ enum ColorPallete {
     static let tertiary = UIColor(named: "Tertiary")
 }
 
+// MARK: - Image Assets
 enum ImageAssets {
     static let profile = UIImage(named: "Profile")
     static let pencil = UIImage(named: "Pencil")
