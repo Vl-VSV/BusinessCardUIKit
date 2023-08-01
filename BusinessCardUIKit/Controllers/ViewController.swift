@@ -21,6 +21,25 @@ class ViewController: UIViewController {
         static let cellCornerRadius: CGFloat = 12
         static let addButtonSize: CGFloat = 44
         static let deleteButtonSize: CGFloat = 14
+        
+        static let profileImageTopPadding: CGFloat = 24
+        static let nameLabelTopPadding: CGFloat = 16
+        static let sloganLabelTopPadding: CGFloat = 4
+        static let bottomViewTopPadding: CGFloat = 20
+        
+        static let skillsStackTopPadding: CGFloat = 20
+        static let skillsStackLeadingPadding: CGFloat = 16
+        static let skillsStackTrailingPadding: CGFloat = -16
+        static let skillsStackHeight: CGFloat = 24
+        
+        static let skillsCollectionViewTopPadding: CGFloat = 20
+        static let skillsCollectionViewLeadingPadding: CGFloat = 16
+        static let skillsCollectionViewTrailingPadding: CGFloat = -16
+        
+        static let aboutStackTopPadding: CGFloat = 24
+        static let aboutStackLeadingPadding: CGFloat = 16
+        static let aboutStackTrailingPadding: CGFloat = -16
+        static let aboutStackBottomPadding: CGFloat = -58
     }
     
     // MARK: - View Did Load
@@ -214,36 +233,35 @@ class ViewController: UIViewController {
             profileImage.widthAnchor.constraint(equalToConstant: UIConstants.imageWidth),
             profileImage.heightAnchor.constraint(equalToConstant: UIConstants.imageHeight),
             profileImage.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
-            profileImage.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 24),
+            profileImage.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: UIConstants.profileImageTopPadding),
             
-            nameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 16),
+            nameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: UIConstants.nameLabelTopPadding),
             nameLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
-            sloganLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 4),
+            sloganLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: UIConstants.sloganLabelTopPadding),
             sloganLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             locationStack.topAnchor.constraint(equalTo: sloganLabel.bottomAnchor),
             locationStack.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
-            bottomView.topAnchor.constraint(equalTo: locationStack.bottomAnchor, constant: 20),
+            bottomView.topAnchor.constraint(equalTo: locationStack.bottomAnchor, constant: UIConstants.bottomViewTopPadding),
             bottomView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
-            skillsStack.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: 20),
-            skillsStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: 16),
-            skillsStack.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: -16),
-            skillsStack.heightAnchor.constraint(equalToConstant: 24),
+            skillsStack.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: UIConstants.skillsStackTopPadding),
+            skillsStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: UIConstants.skillsStackLeadingPadding),
+            skillsStack.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: UIConstants.skillsStackTrailingPadding),
+            skillsStack.heightAnchor.constraint(equalToConstant: UIConstants.skillsStackHeight),
             
-            skillsCollectionView.topAnchor.constraint(equalTo: skillsStack.bottomAnchor, constant: 20),
-            skillsCollectionView.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: 16),
-            skillsCollectionView.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: -16),
-//            skillsCollectionView.heightAnchor.constraint(greaterThanOrEqualToConstant: 300),
+            skillsCollectionView.topAnchor.constraint(equalTo: skillsStack.bottomAnchor, constant: UIConstants.skillsCollectionViewTopPadding),
+            skillsCollectionView.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: UIConstants.skillsCollectionViewLeadingPadding),
+            skillsCollectionView.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: UIConstants.skillsCollectionViewTrailingPadding),
             
             aboutStack.topAnchor.constraint(equalTo: skillsCollectionView.bottomAnchor, constant: 24),
             aboutStack.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor, constant: 16),
             aboutStack.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor, constant: -16),
-            aboutStack.bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: -20),
+            aboutStack.bottomAnchor.constraint(equalTo: bottomView.bottomAnchor, constant: -58),
             
         ])
         
