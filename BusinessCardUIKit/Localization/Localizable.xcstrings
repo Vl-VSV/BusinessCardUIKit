@@ -1,0 +1,125 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "about" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я учусь на втором курсе РТУ МИРЭА на факультете “Программная инженерия”.\n            \n                Я - начинающий разработчик, интересующийся созданием мобильных приложений на платформе iOS, а также в разработкой игр в Unreal Engine.\n            \n                Я имею знания и опыт в языках программирования, таких как Python, Swift и С++, и стремлюсь к изучению новых технологий и развитию своих навыков. Я также увлекаюсь 3D-моделированием и имею опыт работы с программными пакетами, такими как Blender, Fusion 360 и 3D Studio Max. В свободное время я продолжаю изучать новые технологии и техники, а также увлекаюсь спортом, в частности я состою в сборной РТУ МИРЭА по бадминтону."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я учусь на втором курсе РТУ МИРЭА на факультете “Программная инженерия”.\n            \n                Я - iOS разработчик, интересующийся созданием мобильных приложений на платформе iOS.\n            \n                Я имею знания и опыт в языках программирования, таких как Python, Swift и С++, и стремлюсь к изучению новых технологий и развитию своих навыков. Я также увлекаюсь 3D-моделированием и имею опыт работы с программными пакетами, такими как Blender, Fusion 360 и 3D Studio Max. В свободное время я продолжаю изучать новые технологии и техники, а также увлекаюсь спортом, в частности я состою в сборной РТУ МИРЭА по бадминтону."
+          }
+        }
+      }
+    },
+    "about me" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About me"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О себе"
+          }
+        }
+      }
+    },
+    "experience" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IOS-developer, about 2 years of experience"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IOS-developer, опыт около 2-х лет"
+          }
+        }
+      }
+    },
+    "name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voronin Vladislav"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Воронин Владислав\\nСергеевич"
+          }
+        }
+      }
+    },
+    "profile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Профиль"
+          }
+        }
+      }
+    },
+    "skills" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Skills"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои навыки"
+          }
+        }
+      }
+    },
+    "town" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moscow"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Москва"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
