@@ -7,13 +7,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Я учусь на втором курсе РТУ МИРЭА на факультете “Программная инженерия”.\n            \n                Я - начинающий разработчик, интересующийся созданием мобильных приложений на платформе iOS, а также в разработкой игр в Unreal Engine.\n            \n                Я имею знания и опыт в языках программирования, таких как Python, Swift и С++, и стремлюсь к изучению новых технологий и развитию своих навыков. Я также увлекаюсь 3D-моделированием и имею опыт работы с программными пакетами, такими как Blender, Fusion 360 и 3D Studio Max. В свободное время я продолжаю изучать новые технологии и техники, а также увлекаюсь спортом, в частности я состою в сборной РТУ МИРЭА по бадминтону."
+            "value" : "Hello!, I am an iOS developer rapidly advancing in this exciting field.\n\nMy arsenal includes programming languages Python, Swift, and C++, which I confidently apply to implement my ideas. I also enjoy solving algorithmic problems, having tackled over 200 tasks on LeetCode.\n\nHowever, my quest for perfection extends beyond just programming. I am also passionate about 3D modeling and proficient in Blender, Fusion 360, and 3D Studio Max. In my free time, I actively explore new technologies and techniques, and I am also an avid participant in sports, including representing RTU MIREA in badminton.\n\n"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Я учусь на втором курсе РТУ МИРЭА на факультете “Программная инженерия”.\n            \n                Я - iOS разработчик, интересующийся созданием мобильных приложений на платформе iOS.\n            \n                Я имею знания и опыт в языках программирования, таких как Python, Swift и С++, и стремлюсь к изучению новых технологий и развитию своих навыков. Я также увлекаюсь 3D-моделированием и имею опыт работы с программными пакетами, такими как Blender, Fusion 360 и 3D Studio Max. В свободное время я продолжаю изучать новые технологии и техники, а также увлекаюсь спортом, в частности я состою в сборной РТУ МИРЭА по бадминтону."
+            "value" : "Привет! Я IOS разработчик, стремительно продвигающийся в этом захватывающем направлении.\n\nМой арсенал включает в себя языки программирования Python, Swift и C++, которые я уверенно применяю для реализации своих идей. Я имею опыт в решении алгоритмических задач, преодолев более 200 задач на платформе LeetCode.\n\nОднако мое стремление к совершенству не ограничивается лишь программированием. Я также увлекаюсь 3D-моделированием и владею навыками работы в Blender, Fusion 360 и 3D Studio Max. В свободное время я активно изучаю новые технологии и техники, а также участвую в спортивных мероприятиях, включая участие в сборной РТУ МИРЭА по бадминтону."
           }
         }
       }
@@ -36,19 +36,89 @@
       }
     },
     "add" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить"
+          }
+        }
+      }
     },
     "adding skill" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adding Skill"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавление навыка"
+          }
+        }
+      }
     },
     "cancel" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
     },
     "enter skill" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the name of the skill you own"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите название навыка, которым вы владеете"
+          }
+        }
+      }
     },
     "enter title" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите название\""
+          }
+        }
+      }
     },
     "experience" : {
       "extractionState" : "manual",
@@ -85,7 +155,21 @@
       }
     },
     "new skill" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Skill"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новый Навык"
+          }
+        }
+      }
     },
     "profile" : {
       "extractionState" : "manual",
