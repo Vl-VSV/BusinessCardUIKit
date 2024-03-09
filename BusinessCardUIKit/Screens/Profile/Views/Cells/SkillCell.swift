@@ -36,10 +36,7 @@ class SkillCell: UICollectionViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = AppFonts.skills
-//                label.adjustsFontSizeToFitWidth = true
-//                label.minimumScaleFactor = 0.8
-//                label.lineBreakMode = .byTruncatingTail
+        label.font = AppFonts.subtitle
         return label
     }()
     
@@ -74,7 +71,7 @@ class SkillCell: UICollectionViewCell {
             
             deleteButton.widthAnchor.constraint(equalToConstant: UIConstants.buttonWidth),
             deleteButton.heightAnchor.constraint(equalToConstant: UIConstants.buttonWidth),
-            deleteButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: UIConstants.verticalPadding),
+            deleteButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             deleteButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -UIConstants.horizontalPadding)
         ])
     }
@@ -87,6 +84,6 @@ class SkillCell: UICollectionViewCell {
     }
     
     @objc private func deleteButtonTapped() {
-        
+        onDeleteTapped?()
     }
 }

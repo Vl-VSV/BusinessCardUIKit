@@ -19,7 +19,6 @@
 		A484539E2B962D8D00859930 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484539D2B962D8D00859930 /* ProfilePresenter.swift */; };
 		A48453A12B962E3500859930 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48453A02B962E3500859930 /* SkillModel.swift */; };
 		A4D3C7A02A78EBBD0075B5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3C79F2A78EBBD0075B5E0 /* AppDelegate.swift */; };
-		A4D3C7A72A78EBBD0075B5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D3C7A52A78EBBD0075B5E0 /* Main.storyboard */; };
 		A4D3C7A92A78EBBF0075B5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D3C7A82A78EBBF0075B5E0 /* Assets.xcassets */; };
 		A4D3C7AC2A78EBBF0075B5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D3C7AA2A78EBBF0075B5E0 /* LaunchScreen.storyboard */; };
 		A4D94E722B963F77004E2E74 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D94E712B963F77004E2E74 /* ProfileConfigurator.swift */; };
@@ -44,7 +43,6 @@
 		A48453A02B962E3500859930 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		A4D3C79C2A78EBBD0075B5E0 /* BusinessCardUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCardUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D3C79F2A78EBBD0075B5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4D3C7A62A78EBBD0075B5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4D3C7A82A78EBBF0075B5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D3C7AB2A78EBBF0075B5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D3C7AD2A78EBBF0075B5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,13 +65,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A44F21CC2A78EC7700D08494 /* Views */ = {
+		A44F21CC2A78EC7700D08494 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A4D3C7A52A78EBBD0075B5E0 /* Main.storyboard */,
 				A4D3C7AA2A78EBBF0075B5E0 /* LaunchScreen.storyboard */,
 			);
-			path = Views;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		A48453842B9623E900859930 /* Resources */ = {
@@ -191,7 +188,7 @@
 				A48453842B9623E900859930 /* Resources */,
 				A484538F2B962ACF00859930 /* Screens */,
 				A48453902B962B0200859930 /* Managers */,
-				A44F21CC2A78EC7700D08494 /* Views */,
+				A44F21CC2A78EC7700D08494 /* LaunchScreen */,
 				A4D3C7A82A78EBBF0075B5E0 /* Assets.xcassets */,
 				A4D3C7AD2A78EBBF0075B5E0 /* Info.plist */,
 			);
@@ -304,7 +301,6 @@
 				A48453952B962B6400859930 /* Localizable.xcstrings in Resources */,
 				A48453872B96241600859930 /* Colors.xcassets in Resources */,
 				A4D3C7A92A78EBBF0075B5E0 /* Assets.xcassets in Resources */,
-				A4D3C7A72A78EBBD0075B5E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +332,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A4D3C7A52A78EBBD0075B5E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4D3C7A62A78EBBD0075B5E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A4D3C7AA2A78EBBF0075B5E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -486,7 +474,6 @@
 				INFOPLIST_FILE = BusinessCardUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -515,7 +502,6 @@
 				INFOPLIST_FILE = BusinessCardUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

@@ -35,6 +35,21 @@
         }
       }
     },
+    "add" : {
+      "extractionState" : "manual"
+    },
+    "adding skill" : {
+      "extractionState" : "manual"
+    },
+    "cancel" : {
+      "extractionState" : "manual"
+    },
+    "enter skill" : {
+      "extractionState" : "manual"
+    },
+    "enter title" : {
+      "extractionState" : "manual"
+    },
     "experience" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -68,6 +83,9 @@
           }
         }
       }
+    },
+    "new skill" : {
+      "extractionState" : "manual"
     },
     "profile" : {
       "extractionState" : "manual",

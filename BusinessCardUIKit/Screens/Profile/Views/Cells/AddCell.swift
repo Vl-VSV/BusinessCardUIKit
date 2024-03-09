@@ -49,15 +49,13 @@ class AddCell: UICollectionViewCell {
     }
     
     private func setupLayout() {
-        addSkillButton.translatesAutoresizingMaskIntoConstraints = false
-        
         contentView.addSubview(addSkillButton)
         
+        addSkillButton.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            addSkillButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: UIConstants.verticalPadding),
-            addSkillButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: UIConstants.horizontalPadding),
-            addSkillButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -UIConstants.verticalPadding),
-            addSkillButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -UIConstants.horizontalPadding)
+            addSkillButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            addSkillButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
         ])
     }
     
@@ -67,6 +65,6 @@ class AddCell: UICollectionViewCell {
     }
     
     @objc func addButtonTapped() {
-        
+        onTap?()
     }
 }
