@@ -11,5 +11,5 @@ enum AppImages {
     static let profile = UIImage(named: "Profile")
     static let pencil = UIImage(named: "Pencil")
     static let mapPin = UIImage(named: "MapPin")
-    static let checkmark = UIImage(named: "Checkmark")
+    static let checkmark = UIImage(named: "Tick")
 }

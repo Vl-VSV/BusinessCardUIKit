@@ -12,12 +12,13 @@ struct Constants {
     
     public static let defaultSkills = [
         SkillModel(name: "Swift"),
-        SkillModel(name: "SwiftUI"),
-        SkillModel(name: "iOS Development"),
-        SkillModel(name: "REST APIs"),
-        SkillModel(name: "Git"),
         SkillModel(name: "Python"),
-        SkillModel(name: "Unit Testing")
-    ]
+        SkillModel(name: "C++"),
+        SkillModel(name: "Git"),
+        SkillModel(name: "SwiftUI/UIKit"),
+        SkillModel(name: "Unit Testing"),
+        SkillModel(name: "UI/UX Design")
+    ]// MARK: - #'Text'#
+
     
 }

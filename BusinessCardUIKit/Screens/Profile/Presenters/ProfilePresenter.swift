@@ -11,8 +11,8 @@ protocol ProfilePresenting: AnyObject {
     var skills: [SkillModel] { get }
     var isEditMode: Bool { get }
     func deleteSkill(index: Int)
-    func addSkill(_ skill: SkillModel)
     func changeEditMode()
+    func addNewSkill()
 }
 
 
@@ -48,5 +48,26 @@ class ProfilePresenter: ProfilePresenting {
     func changeEditMode() {
         isEditMode = !isEditMode
         view?.updateCollection()
+    }
+    
+    func addNewSkill() {
+        let alert = UIAlertController(title: "adding skill".localized, message: "enter skill".localized, preferredStyle: .alert)
+        
+        var textField = UITextField()
+        
+        let action = UIAlertAction(title: "add".localized, style: .default) { action in
+            self.addSkill(SkillModel(name: textField.text ?? "new skill".localized))
+        }
+        let secondAction = UIAlertAction(title: "cancel".localized, style: .destructive)
+        
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "enter title".localized
+            textField = alertTextField
+        }
+        
+        alert.addAction(secondAction)
+        alert.addAction(action)
+        
+        self.view?.present(alert, animated: true, completion: nil)
     }
 }

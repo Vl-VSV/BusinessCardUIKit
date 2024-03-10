@@ -182,28 +182,7 @@ final class ProfileView: UIViewController {
     }
     
     private func addButtonTapped() {
-        showNewSkillAlert()
-    }
-    
-    private func showNewSkillAlert() {
-        let alert = UIAlertController(title: "adding skill".localized, message: "enter skill".localized, preferredStyle: .alert)
-        
-        var textField = UITextField()
-        
-        let action = UIAlertAction(title: "add".localized, style: .default) { action in
-            self.presenter.addSkill(SkillModel(name: textField.text ?? "new skill".localized))
-        }
-        let secondAction = UIAlertAction(title: "cancel".localized, style: .destructive)
-        
-        alert.addTextField { alertTextField in
-            alertTextField.placeholder = "enter title".localized
-            textField = alertTextField
-        }
-        
-        alert.addAction(secondAction)
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
+        presenter.addNewSkill()
     }
 
     private func setupSubviews() {
