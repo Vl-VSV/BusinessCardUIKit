@@ -106,6 +106,13 @@ final class ProfileView: UIViewController {
         
         stack.addArrangedSubview(image)
         stack.addArrangedSubview(label)
+        
+        image.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            image.widthAnchor.constraint(equalToConstant: 16),
+            image.heightAnchor.constraint(equalToConstant: 16),
+            image.centerYAnchor.constraint(equalTo: stack.centerYAnchor)
+        ])
         return stack
     }()
     
@@ -123,6 +130,12 @@ final class ProfileView: UIViewController {
         
         stack.addArrangedSubview(label)
         stack.addArrangedSubview(button)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            button.widthAnchor.constraint(equalToConstant: 24),
+            button.heightAnchor.constraint(equalToConstant: 24),
+        ])
         
         return stack
     }()
