@@ -21,8 +21,6 @@
 2. **Навыки**:
     - Редактируемая `UICollectionView`, где можно редактировать навыки (добавлять и удалять).
 
-<img align="right" width="30%" src="https://github.com/Vl-VSV/BusinessCardUIKit/blob/main/Images/Editing_Skills.png">
-
 ## Технические детали
 
 - **Язык программирования**: Swift.
